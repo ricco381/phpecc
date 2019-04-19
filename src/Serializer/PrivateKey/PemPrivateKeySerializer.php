@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PrivateKey;
+namespace ricco381\Ecc\Serializer\PrivateKey;
 
-use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
+use ricco381\Ecc\Crypto\Key\PrivateKeyInterface;
 
 /**
  * PEM Private key formatter
@@ -27,7 +27,7 @@ class PemPrivateKeySerializer implements PrivateKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::serialize()
+     * @see \ricco381\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::serialize()
      */
     public function serialize(PrivateKeyInterface $key): string
     {
@@ -42,7 +42,7 @@ class PemPrivateKeySerializer implements PrivateKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::parse()
+     * @see \ricco381\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::parse()
      */
     public function parse(string $formattedKey): PrivateKeyInterface
     {

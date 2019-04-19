@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Key;
+namespace ricco381\Ecc\Crypto\Key;
 
 /**
  * *********************************************************************
@@ -27,8 +27,8 @@ namespace Mdanter\Ecc\Crypto\Key;
  * ***********************************************************************
  */
 
-use Mdanter\Ecc\Crypto\EcDH\EcDHInterface;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Crypto\EcDH\EcDHInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
 
 /**
  * This is a contract for the PrivateKey portion of ECDSA.

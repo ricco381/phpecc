@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Primitives;
+namespace ricco381\Ecc\Primitives;
 
-use Mdanter\Ecc\Exception\PointException;
-use Mdanter\Ecc\Exception\PointNotOnCurveException;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Math\ModularArithmetic;
+use ricco381\Ecc\Exception\PointException;
+use ricco381\Ecc\Exception\PointNotOnCurveException;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\ModularArithmetic;
 
 /**
  * *********************************************************************
@@ -120,7 +120,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::isInfinity()
+     * @see \ricco381\Ecc\Primitives\PointInterface::isInfinity()
      */
     public function isInfinity(): bool
     {
@@ -129,7 +129,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::getCurve()
+     * @see \ricco381\Ecc\Primitives\PointInterface::getCurve()
      */
     public function getCurve(): CurveFpInterface
     {
@@ -138,7 +138,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::getOrder()
+     * @see \ricco381\Ecc\Primitives\PointInterface::getOrder()
      */
     public function getOrder(): \GMP
     {
@@ -147,7 +147,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::getX()
+     * @see \ricco381\Ecc\Primitives\PointInterface::getX()
      */
     public function getX(): \GMP
     {
@@ -156,7 +156,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::getY()
+     * @see \ricco381\Ecc\Primitives\PointInterface::getY()
      */
     public function getY(): \GMP
     {
@@ -165,7 +165,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::add()
+     * @see \ricco381\Ecc\Primitives\PointInterface::add()
      * @return self
      */
     public function add(PointInterface $addend): PointInterface
@@ -213,7 +213,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::cmp()
+     * @see \ricco381\Ecc\Primitives\PointInterface::cmp()
      */
     public function cmp(PointInterface $other): int
     {
@@ -240,7 +240,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::equals()
+     * @see \ricco381\Ecc\Primitives\PointInterface::equals()
      */
     public function equals(PointInterface $other): bool
     {
@@ -249,7 +249,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::mul()
+     * @see \ricco381\Ecc\Primitives\PointInterface::mul()
      */
     public function mul(\GMP $n): PointInterface
     {
@@ -344,7 +344,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::getDouble()
+     * @see \ricco381\Ecc\Primitives\PointInterface::getDouble()
      * @return self
      */
     public function getDouble(): PointInterface
@@ -379,7 +379,7 @@ class Point implements PointInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\PointInterface::__toString()
+     * @see \ricco381\Ecc\Primitives\PointInterface::__toString()
      */
     public function __toString(): string
     {

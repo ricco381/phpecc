@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Curves;
+namespace ricco381\Ecc\Curves;
 
-use Mdanter\Ecc\Exception\UnknownCurveException;
-use Mdanter\Ecc\Exception\UnsupportedCurveException;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Math\MathAdapterFactory;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Exception\UnknownCurveException;
+use ricco381\Ecc\Exception\UnsupportedCurveException;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\MathAdapterFactory;
+use ricco381\Ecc\Primitives\GeneratorPoint;
 
 class CurveFactory
 {

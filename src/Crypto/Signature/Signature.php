@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Signature;
+namespace ricco381\Ecc\Crypto\Signature;
 
 /**
  * *********************************************************************
@@ -57,7 +57,7 @@ class Signature implements SignatureInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Signature\SignatureInterface::getR()
+     * @see \ricco381\Ecc\Crypto\Signature\SignatureInterface::getR()
      */
     public function getR(): \GMP
     {
@@ -66,7 +66,7 @@ class Signature implements SignatureInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Signature\SignatureInterface::getS()
+     * @see \ricco381\Ecc\Crypto\Signature\SignatureInterface::getS()
      */
     public function getS(): \GMP
     {

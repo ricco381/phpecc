@@ -1,6 +1,6 @@
 <?php
 
-namespace Mdanter\Ecc\Math;
+namespace ricco381\Ecc\Math;
 
 /***********************************************************************
      * Copyright (C) 2012 Matyas Danter
@@ -30,8 +30,8 @@ namespace Mdanter\Ecc\Math;
  * @author Matyas Danter
  */
 
-use Mdanter\Ecc\Exception\NumberTheoryException;
-use Mdanter\Ecc\Exception\SquareRootException;
+use ricco381\Ecc\Exception\NumberTheoryException;
+use ricco381\Ecc\Exception\SquareRootException;
 
 /**
  * Rewritten to take a MathAdaptor to handle different environments. Has

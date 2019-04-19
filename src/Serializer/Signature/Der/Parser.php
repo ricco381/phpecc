@@ -1,21 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\Signature\Der;
+namespace ricco381\Ecc\Serializer\Signature\Der;
 
-use FG\ASN1\ASNObject;
-use FG\ASN1\Identifier;
-use FG\ASN1\Universal\Integer;
-use Mdanter\Ecc\Crypto\Signature\Signature;
-use Mdanter\Ecc\Crypto\Signature\SignatureInterface;
-use Mdanter\Ecc\Exception\SignatureDecodeException;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\Universal\Integer;
+use ricco381\Ecc\Crypto\Signature\Signature;
+use ricco381\Ecc\Crypto\Signature\SignatureInterface;
+use ricco381\Ecc\Exception\SignatureDecodeException;
 
 class Parser
 {
     /**
      * @param string $binary
      * @return SignatureInterface
-     * @throws \FG\ASN1\Exception\ParserException
+     * @throws \FGR\ASN1\Exception\ParserException
      */
     public function parse(string $binary): SignatureInterface
     {

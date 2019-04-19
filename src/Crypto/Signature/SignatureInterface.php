@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Signature;
+namespace ricco381\Ecc\Crypto\Signature;
 
 /**
  * *********************************************************************

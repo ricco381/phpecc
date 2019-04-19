@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PublicKey;
+namespace ricco381\Ecc\Serializer\PublicKey;
 
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
 
 interface PublicKeySerializerInterface
 {

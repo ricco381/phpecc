@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc;
+namespace ricco381\Ecc;
 
-use Mdanter\Ecc\Crypto\Signature\Signer;
-use Mdanter\Ecc\Curves\NistCurve;
-use Mdanter\Ecc\Curves\SecgCurve;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Math\MathAdapterFactory;
-use Mdanter\Ecc\Primitives\CurveFp;
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Primitives\CurveParameters;
+use ricco381\Ecc\Crypto\Signature\Signer;
+use ricco381\Ecc\Curves\NistCurve;
+use ricco381\Ecc\Curves\SecgCurve;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\MathAdapterFactory;
+use ricco381\Ecc\Primitives\CurveFp;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Primitives\CurveParameters;
 
 /**
  * Static factory class providing factory methods to work with NIST and SECG recommended curves.

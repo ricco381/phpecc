@@ -1,6 +1,6 @@
 <?php
 
-namespace Mdanter\Ecc\Math;
+namespace ricco381\Ecc\Math;
 
 class ModularArithmetic
 {

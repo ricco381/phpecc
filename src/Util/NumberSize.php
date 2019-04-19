@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Util;
+namespace ricco381\Ecc\Util;
 
-use Mdanter\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
 
 class NumberSize
 {

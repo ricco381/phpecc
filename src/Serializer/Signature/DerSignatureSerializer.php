@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\Signature;
+namespace ricco381\Ecc\Serializer\Signature;
 
-use Mdanter\Ecc\Crypto\Signature\SignatureInterface;
+use ricco381\Ecc\Crypto\Signature\SignatureInterface;
 
 class DerSignatureSerializer implements DerSignatureSerializerInterface
 {
@@ -35,7 +35,7 @@ class DerSignatureSerializer implements DerSignatureSerializerInterface
     /**
      * @param string $binary
      * @return SignatureInterface
-     * @throws \FG\ASN1\Exception\ParserException
+     * @throws \FGR\ASN1\Exception\ParserException
      */
     public function parse(string $binary): SignatureInterface
     {

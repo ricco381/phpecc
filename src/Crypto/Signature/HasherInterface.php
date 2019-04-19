@@ -1,8 +1,8 @@
 <?php
 
-namespace Mdanter\Ecc\Crypto\Signature;
+namespace ricco381\Ecc\Crypto\Signature;
 
-use Mdanter\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Primitives\GeneratorPoint;
 
 interface HasherInterface
 {

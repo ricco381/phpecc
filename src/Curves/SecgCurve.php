@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Curves;
+namespace ricco381\Ecc\Curves;
 
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Primitives\CurveParameters;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Random\RandomNumberGeneratorInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Primitives\CurveParameters;
+use ricco381\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Random\RandomNumberGeneratorInterface;
 
 /**
  * *********************************************************************
@@ -101,7 +101,7 @@ class SecgCurve
 
     /**
      * @param RandomNumberGeneratorInterface $randomGenerator
-     * @return \Mdanter\Ecc\Primitives\GeneratorPoint
+     * @return \ricco381\Ecc\Primitives\GeneratorPoint
      */
     public function generator192k1(RandomNumberGeneratorInterface $randomGenerator = null): GeneratorPoint
     {

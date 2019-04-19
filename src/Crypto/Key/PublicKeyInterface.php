@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Key;
+namespace ricco381\Ecc\Crypto\Key;
 
 /**
  * *********************************************************************
@@ -26,9 +26,9 @@ namespace Mdanter\Ecc\Crypto\Key;
  * OTHER DEALINGS IN THE SOFTWARE.
  * ***********************************************************************
  */
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Primitives\PointInterface;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
 
 /**
  * This is the contract for the PublicKey portion of ECDSA.

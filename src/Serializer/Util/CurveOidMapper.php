@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\Util;
+namespace ricco381\Ecc\Serializer\Util;
 
-use FG\ASN1\Universal\ObjectIdentifier;
-use Mdanter\Ecc\Curves\NamedCurveFp;
-use Mdanter\Ecc\Curves\CurveFactory;
-use Mdanter\Ecc\Curves\NistCurve;
-use Mdanter\Ecc\Curves\SecgCurve;
-use Mdanter\Ecc\Exception\UnsupportedCurveException;
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
+use FGR\ASN1\Universal\ObjectIdentifier;
+use ricco381\Ecc\Curves\NamedCurveFp;
+use ricco381\Ecc\Curves\CurveFactory;
+use ricco381\Ecc\Curves\NistCurve;
+use ricco381\Ecc\Curves\SecgCurve;
+use ricco381\Ecc\Exception\UnsupportedCurveException;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
 
 class CurveOidMapper
 {

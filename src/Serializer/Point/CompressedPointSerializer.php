@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\Point;
+namespace ricco381\Ecc\Serializer\Point;
 
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Primitives\PointInterface;
-use Mdanter\Ecc\Serializer\Util\CurveOidMapper;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Serializer\Util\CurveOidMapper;
 
 class CompressedPointSerializer implements PointSerializerInterface
 {
@@ -16,7 +16,7 @@ class CompressedPointSerializer implements PointSerializerInterface
     private $adapter;
 
     /**
-     * @var \Mdanter\Ecc\Math\NumberTheory
+     * @var \ricco381\Ecc\Math\NumberTheory
      */
     private $theory;
 

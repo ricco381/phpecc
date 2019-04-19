@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PublicKey\Der;
+namespace ricco381\Ecc\Serializer\PublicKey\Der;
 
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\ObjectIdentifier;
-use FG\ASN1\Universal\BitString;
-use Mdanter\Ecc\Primitives\PointInterface;
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
-use Mdanter\Ecc\Curves\NamedCurveFp;
-use Mdanter\Ecc\Serializer\Util\CurveOidMapper;
-use Mdanter\Ecc\Serializer\PublicKey\DerPublicKeySerializer;
-use Mdanter\Ecc\Serializer\Point\PointSerializerInterface;
-use Mdanter\Ecc\Serializer\Point\UncompressedPointSerializer;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\ObjectIdentifier;
+use FGR\ASN1\Universal\BitString;
+use ricco381\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Curves\NamedCurveFp;
+use ricco381\Ecc\Serializer\Util\CurveOidMapper;
+use ricco381\Ecc\Serializer\PublicKey\DerPublicKeySerializer;
+use ricco381\Ecc\Serializer\Point\PointSerializerInterface;
+use ricco381\Ecc\Serializer\Point\UncompressedPointSerializer;
 
 class Formatter
 {

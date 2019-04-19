@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Random;
+namespace ricco381\Ecc\Random;
 
 interface RandomNumberGeneratorInterface
 {

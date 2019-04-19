@@ -1,12 +1,12 @@
 <?php
 
-namespace Mdanter\Ecc\Crypto\Signature;
+namespace ricco381\Ecc\Crypto\Signature;
 
-use Mdanter\Ecc\EccFactory;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Util\BinaryString;
-use Mdanter\Ecc\Util\NumberSize;
+use ricco381\Ecc\EccFactory;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Util\BinaryString;
+use ricco381\Ecc\Util\NumberSize;
 
 class SignHasher implements HasherInterface
 {

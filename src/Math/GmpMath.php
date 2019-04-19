@@ -1,9 +1,9 @@
 <?php
 
-namespace Mdanter\Ecc\Math;
+namespace ricco381\Ecc\Math;
 
-use Mdanter\Ecc\Util\BinaryString;
-use Mdanter\Ecc\Util\NumberSize;
+use ricco381\Ecc\Util\BinaryString;
+use ricco381\Ecc\Util\NumberSize;
 
 class GmpMath implements GmpMathInterface
 {

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\Point;
+namespace ricco381\Ecc\Serializer\Point;
 
-use Mdanter\Ecc\Primitives\PointInterface;
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Serializer\Util\CurveOidMapper;
-use Mdanter\Ecc\Util\BinaryString;
+use ricco381\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Serializer\Util\CurveOidMapper;
+use ricco381\Ecc\Util\BinaryString;
 
 class UncompressedPointSerializer implements PointSerializerInterface
 {

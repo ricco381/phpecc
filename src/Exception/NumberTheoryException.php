@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Exception;
+namespace ricco381\Ecc\Exception;
 
 class NumberTheoryException extends \RuntimeException
 {

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Curves;
+namespace ricco381\Ecc\Curves;
 
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Primitives\CurveFp;
-use Mdanter\Ecc\Primitives\CurveParameters;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Primitives\CurveFp;
+use ricco381\Ecc\Primitives\CurveParameters;
 
 class NamedCurveFp extends CurveFp
 {

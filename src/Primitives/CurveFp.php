@@ -22,13 +22,13 @@ OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
  *************************************************************************/
-namespace Mdanter\Ecc\Primitives;
+namespace ricco381\Ecc\Primitives;
 
-use Mdanter\Ecc\Exception\PointRecoveryException;
-use Mdanter\Ecc\Exception\SquareRootException;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Math\ModularArithmetic;
-use Mdanter\Ecc\Random\RandomNumberGeneratorInterface;
+use ricco381\Ecc\Exception\PointRecoveryException;
+use ricco381\Ecc\Exception\SquareRootException;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\ModularArithmetic;
+use ricco381\Ecc\Random\RandomNumberGeneratorInterface;
 
 /**
  * This class is a representation of an EC over a field modulo a prime number
@@ -72,7 +72,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getModAdapter()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getModAdapter()
      */
     public function getModAdapter(): ModularArithmetic
     {
@@ -81,7 +81,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getPoint()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getPoint()
      */
     public function getPoint(\GMP $x, \GMP $y, \GMP $order = null): PointInterface
     {
@@ -90,7 +90,7 @@ class CurveFp implements CurveFpInterface
     
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getInfinity()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getInfinity()
      */
     public function getInfinity(): PointInterface
     {
@@ -99,7 +99,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getGenerator()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getGenerator()
      */
     public function getGenerator(\GMP $x, \GMP $y, \GMP $order, RandomNumberGeneratorInterface $randomGenerator = null): GeneratorPoint
     {
@@ -139,7 +139,7 @@ class CurveFp implements CurveFpInterface
     }
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::contains()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::contains()
      */
     public function contains(\GMP $x, \GMP $y): bool
     {
@@ -164,7 +164,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getA()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getA()
      */
     public function getA(): \GMP
     {
@@ -173,7 +173,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getB()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getB()
      */
     public function getB(): \GMP
     {
@@ -182,7 +182,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::getPrime()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::getPrime()
      */
     public function getPrime(): \GMP
     {
@@ -199,7 +199,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::cmp()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::cmp()
      */
     public function cmp(CurveFpInterface $other): int
     {
@@ -214,7 +214,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::equals()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::equals()
      */
     public function equals(CurveFpInterface $other): bool
     {
@@ -223,7 +223,7 @@ class CurveFp implements CurveFpInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Primitives\CurveFpInterface::__toString()
+     * @see \ricco381\Ecc\Primitives\CurveFpInterface::__toString()
      */
     public function __toString(): string
     {

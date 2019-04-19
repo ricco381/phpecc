@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PrivateKey;
+namespace ricco381\Ecc\Serializer\PrivateKey;
 
-use FG\ASN1\ASNObject;
-use FG\ASN1\Universal\Sequence;
-use FG\ASN1\Universal\Integer;
-use FG\ASN1\Universal\BitString;
-use FG\ASN1\Universal\OctetString;
-use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Math\MathAdapterFactory;
-use Mdanter\Ecc\Serializer\Util\CurveOidMapper;
-use Mdanter\Ecc\Serializer\PublicKey\DerPublicKeySerializer;
-use FG\ASN1\ExplicitlyTaggedObject;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Universal\Sequence;
+use FGR\ASN1\Universal\Integer;
+use FGR\ASN1\Universal\BitString;
+use FGR\ASN1\Universal\OctetString;
+use ricco381\Ecc\Crypto\Key\PrivateKeyInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\MathAdapterFactory;
+use ricco381\Ecc\Serializer\Util\CurveOidMapper;
+use ricco381\Ecc\Serializer\PublicKey\DerPublicKeySerializer;
+use FGR\ASN1\ExplicitlyTaggedObject;
 
 /**
  * PEM Private key formatter
@@ -47,7 +47,7 @@ class DerPrivateKeySerializer implements PrivateKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::serialize()
+     * @see \ricco381\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::serialize()
      */
     public function serialize(PrivateKeyInterface $key): string
     {
@@ -83,8 +83,8 @@ class DerPrivateKeySerializer implements PrivateKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::parse()
-     * @throws \FG\ASN1\Exception\ParserException
+     * @see \ricco381\Ecc\Serializer\PrivateKey\PrivateKeySerializerInterface::parse()
+     * @throws \FGR\ASN1\Exception\ParserException
      */
     public function parse(string $data): PrivateKeyInterface
     {

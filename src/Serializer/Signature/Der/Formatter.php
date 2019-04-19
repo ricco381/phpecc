@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\Signature\Der;
+namespace ricco381\Ecc\Serializer\Signature\Der;
 
-use FG\ASN1\Universal\Integer;
-use FG\ASN1\Universal\Sequence;
-use Mdanter\Ecc\Crypto\Signature\SignatureInterface;
+use FGR\ASN1\Universal\Integer;
+use FGR\ASN1\Universal\Sequence;
+use ricco381\Ecc\Crypto\Signature\SignatureInterface;
 
 class Formatter
 {

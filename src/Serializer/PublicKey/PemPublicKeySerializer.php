@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PublicKey;
+namespace ricco381\Ecc\Serializer\PublicKey;
 
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
 
 /**
  *
@@ -27,7 +27,7 @@ class PemPublicKeySerializer implements PublicKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PublicKey\PublicKeySerializerInterface::serialize()
+     * @see \ricco381\Ecc\Serializer\PublicKey\PublicKeySerializerInterface::serialize()
      */
     public function serialize(PublicKeyInterface $key): string
     {
@@ -42,7 +42,7 @@ class PemPublicKeySerializer implements PublicKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PublicKey\PublicKeySerializerInterface::parse()
+     * @see \ricco381\Ecc\Serializer\PublicKey\PublicKeySerializerInterface::parse()
      */
     public function parse(string $formattedKey): PublicKeyInterface
     {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Exception;
+namespace ricco381\Ecc\Exception;
 
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Primitives\PointInterface;
 use Throwable;
 
 class PublicKeyException extends \RuntimeException

@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PublicKey;
+namespace ricco381\Ecc\Serializer\PublicKey;
 
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Math\MathAdapterFactory;
-use Mdanter\Ecc\Serializer\Point\PointSerializerInterface;
-use Mdanter\Ecc\Serializer\Point\UncompressedPointSerializer;
-use Mdanter\Ecc\Serializer\PublicKey\Der\Formatter;
-use Mdanter\Ecc\Serializer\PublicKey\Der\Parser;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Math\MathAdapterFactory;
+use ricco381\Ecc\Serializer\Point\PointSerializerInterface;
+use ricco381\Ecc\Serializer\Point\UncompressedPointSerializer;
+use ricco381\Ecc\Serializer\PublicKey\Der\Formatter;
+use ricco381\Ecc\Serializer\PublicKey\Der\Parser;
 
 /**
  *
@@ -72,7 +72,7 @@ class DerPublicKeySerializer implements PublicKeySerializerInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Serializer\PublicKey\PublicKeySerializerInterface::parse()
+     * @see \ricco381\Ecc\Serializer\PublicKey\PublicKeySerializerInterface::parse()
      */
     public function parse(string $string): PublicKeyInterface
     {

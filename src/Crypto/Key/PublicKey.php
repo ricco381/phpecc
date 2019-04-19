@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Key;
+namespace ricco381\Ecc\Crypto\Key;
 
 /**
  * *********************************************************************
@@ -27,11 +27,11 @@ namespace Mdanter\Ecc\Crypto\Key;
  * ***********************************************************************
  */
 
-use Mdanter\Ecc\Exception\PublicKeyException;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Exception\PublicKeyException;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Primitives\PointInterface;
 
 /**
  * This class serves as public- private key exchange for signature verification
@@ -98,7 +98,7 @@ class PublicKey implements PublicKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PublicKeyInterface::getCurve()
+     * @see \ricco381\Ecc\Crypto\Key\PublicKeyInterface::getCurve()
      */
     public function getCurve(): CurveFpInterface
     {
@@ -107,7 +107,7 @@ class PublicKey implements PublicKeyInterface
 
     /**
      * {$inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PublicKeyInterface::getGenerator()
+     * @see \ricco381\Ecc\Crypto\Key\PublicKeyInterface::getGenerator()
      */
     public function getGenerator(): GeneratorPoint
     {
@@ -116,7 +116,7 @@ class PublicKey implements PublicKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PublicKeyInterface::getPoint()
+     * @see \ricco381\Ecc\Crypto\Key\PublicKeyInterface::getPoint()
      */
     public function getPoint(): PointInterface
     {

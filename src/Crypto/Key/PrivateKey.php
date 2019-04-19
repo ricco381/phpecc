@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Key;
+namespace ricco381\Ecc\Crypto\Key;
 
 /**
  * *********************************************************************
@@ -27,12 +27,12 @@ namespace Mdanter\Ecc\Crypto\Key;
  * ***********************************************************************
  */
 
-use Mdanter\Ecc\Crypto\EcDH\EcDH;
-use Mdanter\Ecc\Crypto\EcDH\EcDHInterface;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Primitives\CurveFpInterface;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Primitives\PointInterface;
+use ricco381\Ecc\Crypto\EcDH\EcDH;
+use ricco381\Ecc\Crypto\EcDH\EcDHInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Primitives\CurveFpInterface;
+use ricco381\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Primitives\PointInterface;
 
 /**
  * This class serves as public - private key exchange for signature verification.
@@ -68,7 +68,7 @@ class PrivateKey implements PrivateKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PrivateKeyInterface::getPublicKey()
+     * @see \ricco381\Ecc\Crypto\Key\PrivateKeyInterface::getPublicKey()
      */
     public function getPublicKey(): PublicKeyInterface
     {
@@ -77,7 +77,7 @@ class PrivateKey implements PrivateKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PrivateKeyInterface::getPoint()
+     * @see \ricco381\Ecc\Crypto\Key\PrivateKeyInterface::getPoint()
      */
     public function getPoint(): GeneratorPoint
     {
@@ -86,7 +86,7 @@ class PrivateKey implements PrivateKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PrivateKeyInterface::getCurve()
+     * @see \ricco381\Ecc\Crypto\Key\PrivateKeyInterface::getCurve()
      */
     public function getCurve(): CurveFpInterface
     {
@@ -95,7 +95,7 @@ class PrivateKey implements PrivateKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PrivateKeyInterface::getSecret()
+     * @see \ricco381\Ecc\Crypto\Key\PrivateKeyInterface::getSecret()
      */
     public function getSecret(): \GMP
     {
@@ -104,7 +104,7 @@ class PrivateKey implements PrivateKeyInterface
 
     /**
      * {@inheritDoc}
-     * @see \Mdanter\Ecc\Crypto\Key\PrivateKeyInterface::createExchange()
+     * @see \ricco381\Ecc\Crypto\Key\PrivateKeyInterface::createExchange()
      */
     public function createExchange(PublicKeyInterface $recipient = null): EcDHInterface
     {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Primitives;
+namespace ricco381\Ecc\Primitives;
 
-use Mdanter\Ecc\Math\ModularArithmetic;
-use Mdanter\Ecc\Random\RandomNumberGeneratorInterface;
+use ricco381\Ecc\Math\ModularArithmetic;
+use ricco381\Ecc\Random\RandomNumberGeneratorInterface;
 
 /**
  * *********************************************************************

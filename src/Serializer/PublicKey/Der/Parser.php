@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Serializer\PublicKey\Der;
+namespace ricco381\Ecc\Serializer\PublicKey\Der;
 
-use FG\ASN1\ASNObject;
-use FG\ASN1\Identifier;
-use FG\ASN1\Universal\Sequence;
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Serializer\Util\CurveOidMapper;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Serializer\PublicKey\DerPublicKeySerializer;
-use Mdanter\Ecc\Serializer\Point\PointSerializerInterface;
-use Mdanter\Ecc\Serializer\Point\UncompressedPointSerializer;
-use Mdanter\Ecc\Crypto\Key\PublicKey;
+use FGR\ASN1\ASNObject;
+use FGR\ASN1\Identifier;
+use FGR\ASN1\Universal\Sequence;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Serializer\Util\CurveOidMapper;
+use ricco381\Ecc\Primitives\GeneratorPoint;
+use ricco381\Ecc\Serializer\PublicKey\DerPublicKeySerializer;
+use ricco381\Ecc\Serializer\Point\PointSerializerInterface;
+use ricco381\Ecc\Serializer\Point\UncompressedPointSerializer;
+use ricco381\Ecc\Crypto\Key\PublicKey;
 
 class Parser
 {
@@ -42,7 +42,7 @@ class Parser
     /**
      * @param string $binaryData
      * @return PublicKeyInterface
-     * @throws \FG\ASN1\Exception\ParserException
+     * @throws \FGR\ASN1\Exception\ParserException
      */
     public function parse(string $binaryData): PublicKeyInterface
     {

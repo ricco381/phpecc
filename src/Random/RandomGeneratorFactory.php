@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Mdanter\Ecc\Random;
+namespace ricco381\Ecc\Random;
 
-use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
+use ricco381\Ecc\Crypto\Key\PrivateKeyInterface;
 
-use Mdanter\Ecc\Math\MathAdapterFactory;
+use ricco381\Ecc\Math\MathAdapterFactory;
 
 class RandomGeneratorFactory
 {

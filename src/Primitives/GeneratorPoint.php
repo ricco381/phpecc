@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Primitives;
+namespace ricco381\Ecc\Primitives;
 
-use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Crypto\Key\PrivateKey;
-use Mdanter\Ecc\Crypto\Key\PublicKey;
-use Mdanter\Ecc\Random\RandomGeneratorFactory;
-use Mdanter\Ecc\Random\RandomNumberGeneratorInterface;
+use ricco381\Ecc\Crypto\Key\PrivateKeyInterface;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Crypto\Key\PrivateKey;
+use ricco381\Ecc\Crypto\Key\PublicKey;
+use ricco381\Ecc\Random\RandomGeneratorFactory;
+use ricco381\Ecc\Random\RandomNumberGeneratorInterface;
 
 /**
  * Curve point from which public and private keys can be derived.

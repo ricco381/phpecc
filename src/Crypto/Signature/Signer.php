@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Crypto\Signature;
+namespace ricco381\Ecc\Crypto\Signature;
 
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
-use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
-use Mdanter\Ecc\Util\BinaryString;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Crypto\Key\PrivateKeyInterface;
+use ricco381\Ecc\Crypto\Key\PublicKeyInterface;
+use ricco381\Ecc\Util\BinaryString;
 
 class Signer
 {

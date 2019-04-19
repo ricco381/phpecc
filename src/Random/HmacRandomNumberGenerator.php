@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Mdanter\Ecc\Random;
+namespace ricco381\Ecc\Random;
 
-use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
-use Mdanter\Ecc\Math\GmpMathInterface;
-use Mdanter\Ecc\Util\BinaryString;
-use Mdanter\Ecc\Util\NumberSize;
+use ricco381\Ecc\Crypto\Key\PrivateKeyInterface;
+use ricco381\Ecc\Math\GmpMathInterface;
+use ricco381\Ecc\Util\BinaryString;
+use ricco381\Ecc\Util\NumberSize;
 
 class HmacRandomNumberGenerator implements RandomNumberGeneratorInterface
 {
