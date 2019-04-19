@@ -26,7 +26,7 @@
     "require": {
         "php": "^7.0",
         "ext-gmp": "*",
-        "ricco381/phpasn1": "0.1"
+        "ricco381/phpasn1": "0.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.0",
